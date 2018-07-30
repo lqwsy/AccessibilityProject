@@ -17,7 +17,6 @@ public class MyAccessibilityService extends AccessibilityService {
 	@Override
 	public void onAccessibilityEvent(AccessibilityEvent event) {
 		int eventType =  event.getEventType();
-		Log.i(TAG,"event type = "+ eventType);
 		switch(eventType){
 		case AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED:
 			Log.i(TAG,"event className = "+ event.getClassName().toString());
